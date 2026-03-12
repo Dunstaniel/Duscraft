@@ -79,6 +79,13 @@ const data = [
     comp: 'Brak'
   },
   {
+    en: 'Bane of Arthropods (I-V)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
     en: 'Bash (I-III)',
     pl: 'Rąbnięcie',
     tool: '🛡️',
@@ -93,10 +100,24 @@ const data = [
     comp: 'Scorpions Soul, Crows Soul, True Nature'
   },
   {
+    en: 'Curse of Binding (I)',
+    pl: '-',
+    tool: 'any',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
     en: 'Bite (I-II)',
     pl: 'Ugryzienie',
     tool: '🐕',
     desc: 'Zwiększa obrażenia psa o 2/5 w zależności od poziomu.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Blast Protection (I-V)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
     comp: 'Brak'
   },
   {
@@ -205,6 +226,13 @@ const data = [
     comp: 'Brak'
   },
   {
+    en: 'Efficiency (I-V)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
     en: 'Curse of the End Dweller (I)',
     pl: 'Klątwa Endowego Wędrownika',
     tool: '⛑️🧥🦵👞',
@@ -261,7 +289,7 @@ const data = [
     comp: 'Leech, Venomous, Withering, Grim Reaper'
   },
   {
-    en: 'Fire Body (I-IV)',
+    en: 'Fire Body (I-III)',
     pl: 'Zaklęty ogień',
     tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
     desc: 'Daje szansę 35/50/65% na podpalenie przeciwnika, po jego ataku.',
@@ -289,11 +317,655 @@ const data = [
     comp: 'Brak'
   },
   {
-    en: 'Flame',
+    en: 'Flame (I)',
     pl: 'Płomień',
     tool: '🏹🔫',
     desc: 'Podpala przeciwnika',
     comp: 'Frostbite'
+  },
+  {
+    en: 'Fleer (I-III)',
+    pl: '-',
+    tool: '🦵',
+    desc: 'Daje 5/15/25% szans na to, że po ataku przeciwnika, aktywuje się efekt szybkości.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Fortune (I-V)',
+    pl: 'Szczęście',
+    tool: '⛏️🪓🥄𓌳',
+    desc: 'Zwiększa ilość dropów z rud itp.',
+    comp: 'Silk Touch, Autosmelter'
+  },
+  {
+    en: 'Curse of Fragility (I)',
+    pl: '-',
+    tool: 'Any',
+    desc: 'Zwiększa zużycie przedmiotu.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Frost Walker (I-II)',
+    pl: 'Mroźny Piechur',
+    tool: '👞',
+    desc: 'Tworzy lód po kontakcie z wodą oraz pozwala na chodzenie po blokoach magmy.',
+    comp: 'Sand Strider, Depth Strider'
+  },
+  {
+    en: 'Frost Walker (I-II)',
+    pl: 'Mroźny Piechur',
+    tool: '👞',
+    desc: 'Tworzy lód po kontakcie z wodą oraz pozwala na chodzenie po blokoach magmy.',
+    comp: 'Sand Strider, Depth Strider'
+  },
+  {
+    en: 'Frostbite',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Gallop',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Gambling',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Grappler',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Grim Reaper',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Groundslam',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Hearthlessness',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Heaviness',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Heavy push',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Hellforged',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Helping Hand',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Hero Slayer',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Hollowness',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Horse Crippler',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Impailing',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Infinity',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Insecurity',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Jumper',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Knockback',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Leech',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Looting',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Loyalty',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Luck of the sea',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Lucky Block',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Lunge',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Lure',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Magic Block',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Magic Protection',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Masochist',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Mending',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Merrion',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Mounted',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Multishot',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of the Helldiver',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Nimble grip',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Penetration',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Piercing',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Power',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Procrastination',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Projectile Protection',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Protection',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Punch',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Quick charge',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Ragebound',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Rainforge',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Repeater',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Rustiness',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Sand Strider',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Scent',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Scorpions Soul',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Scout',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Scutum',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Seaman',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Shadow Strike',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Sharpness',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Silk Touch (I)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Skydiver (I-III)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Sloths Hand',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Smite (I-V)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Smoke (I)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Solar Bloom (I)',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Soul Collector',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Soul Speed',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Spike',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Spores',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Spreadshot',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Stepping',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Sun Aegis',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Sweeping Edge',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Swift hands',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Swift Sneak',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Switcher',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Thirst',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Thorns',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Lighting Magnet',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Toxic Body',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'True Calling',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of the Forsaken Surface',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Unbreaking',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Unmoveable',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Vanishing',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Venomous (I-)',
+    pl: 'Jadowity',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Toxic Waters',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Wind Burst',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Wind Walker',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Withering',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
+  },
+  {
+    en: 'Wrath of Fire',
+    pl: '-',
+    tool: '-',
+    desc: 'Desc',
+    comp: 'Brak'
   }
   
 ];

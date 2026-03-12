@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enchantment Table</title>
+<style>
+body{font-family:Arial,sans-serif;background:#111;color:#eee;margin:0;padding:24px}
+.container{max-width:1100px;margin:auto}
+h1{margin-bottom:16px}
+input{width:100%;padding:12px;border-radius:8px;border:1px solid #444;background:#1a1a1a;color:#fff;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;background:#1a1a1a}
+th,td{padding:10px;border-bottom:1px solid #333;text-align:left}
+th{background:#222;position:sticky;top:0}
+tr:hover{background:#202020}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Enchanty</h1>
+<input id="search" placeholder="Szukaj enchantu...">
+<table>
+<thead>
+<tr><th>Nazwa</th><th>Tłumaczenie</th><th>Przedmioty</th><th>Opis</th><th>Niekompatybilność</th></tr>
+</thead>
+<tbody id="tableBody"></tbody>
+</table>
+</div>
+<script>
+// Dopisujesz kolejne enchanty tutaj:
+const data = [
+  {
+    en: 'Animal Protection (I-V)',
+    pl: 'Ochrona dla zwierząt',
+    tool: '🐎🐕👻',
+    desc: 'Zapewnia 15% ochrony na poziom przed każdym typem obrażeń.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Antismasher (I)',
+    pl: 'Antyzgniatacz',
+    tool: '⛑️',
+    desc: 'Zapewnia 80% ochrony przed obrażeniam od buzdyganu.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Aqua Affinity (I)',
+    pl: 'Wydajność pod wodą',
+    tool: '⛑️',
+    desc: 'Przyspiesza kopanie pod wodą.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Autosmelter (I)',
+    pl: 'Autoprzepalanie',
+    tool: '⛏️🪓🥄𓌳',
+    desc: 'Przepala automatycznie materiały, które wydobywasz.',
+    comp: 'Fortune, Silk Touch'
+  },
+  {
+    en: 'Curse of Backlash (I)',
+    pl: 'Klątwa odwetu',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
+    desc: 'Daje 15% szansy na to, że podczas ataku, od 1-4 obrażeń zostanie zwróconych przeciwko Tobie.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Backstep (I-III)',
+    pl: 'Zwód',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
+    desc: 'Daje możliwość odskoku do tyłu, jeżeli się użyje skradania podczas ataku.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Banditos bane (I-V)',
+    pl: 'Pogromca bandytów',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
+    desc: 'Zwiększa obrażenia do wszystkich Illagerów i graczy określonych jako bandyci. Dodatkowo daje efekt osłabienia zaatkowanemu bandycie.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Bash (I-III)',
+    pl: 'Rąbnięcie',
+    tool: '🛡️',
+    desc: 'Dzięki tarczy zadajesz dodatkowe 1 obrażenie na poziom.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Bears Soul (I)',
+    pl: 'Dusza niedźwiedzia',
+    tool: '🐕',
+    desc: 'Zwiększa rozmiar i obrażenia psa, kosztem jego prędkości.',
+    comp: 'Scorpions Soul, Crows Soul, True Nature'
+  },
+  {
+    en: 'Bite (I-II)',
+    pl: 'Ugryzienie',
+    tool: '🐕',
+    desc: 'Zwiększa obrażenia psa o 2/5 w zależności od poziomu.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Bluntness (I)',
+    pl: 'Klątwa tępego ostrza',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
+    desc: 'Zmniejsza obrażenia o połowę.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Bombastic (I)',
+    pl: 'Bombastyczny',
+    tool: '🪓',
+    desc: 'Dodaje 35% szansy na to, że po ataku z siekiery nastąpi wybuch.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Bonk (I-III)',
+    pl: 'Bonk',
+    tool: '🔨',
+    desc: 'Dodaje 5/10/15% szansy na to, że po ataku z buzdyganu spowolnisz przeciwnika i wprowadzisz u niego zawroty głowy.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Brawler (I-III)',
+    pl: 'Zabijaka',
+    tool: '🥊',
+    desc: 'Dodaje 1/1,5/2 obrażeń do głównej rękawicy.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Breach (I-IV)',
+    pl: 'Przedarcie',
+    tool: '🪓🔨🔫',
+    desc: 'Dodaje 15-60% przebicia pancerza.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Butcher (I-V)',
+    pl: 'Rzeźnik',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
+    desc: 'Zwiększa obrażenia do zwierząt oraz Piglinów.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Channeling (I)',
+    pl: 'Porażenie',
+    tool: '🔱🔨',
+    desc: 'W czasie burzy, po ataku, przywołujesz piorun.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Crows Soul (I)',
+    pl: 'Dusza Kruka',
+    tool: '🐕',
+    desc: 'Zmniejsza rozmiar i obrażenia psa, zwiększa jego skoczność i prędkość oraz zapewnia efekt oślepienia po zaatakowaniu.',
+    comp: 'Scorpions Soul, Bears Soul, True Nature'
+  },
+  {
+    en: 'Defensive Stance (I)',
+    pl: 'Obronna postawa',
+    tool: '🦯',
+    desc: 'Daje 30% odporności przed obrażeniami, kiedy się skradasz.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Density (I-V)',
+    pl: 'Masywność',
+    tool: '🔨',
+    desc: 'Zwiększa obrażenia ataku buzdyganem.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Depth Strider (I-III)',
+    pl: 'Głębinowy wędrowiec',
+    tool: '👞',
+    desc: 'Zmniejsza negatywny wpływ wody na poruszanie się.',
+    comp: 'Sand Strider, Frost Walker'
+  },
+  {
+    en: 'Dexterity (I)',
+    pl: 'Zręczność',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
+    desc: 'Zwiększa prędkość ataku po każdym uderzeniu, a po 3 atakach daje efekt siły I.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Disability (I)',
+    pl: 'Klątwa upośledzenia',
+    tool: '🦵℧',
+    desc: 'Zwiększa prędkość ataku po każdym uderzeniu, a po 3 atakach daje efekt siły I.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Disruption (I-III)',
+    pl: 'Zakłócenie',
+    tool: '🛡️',
+    desc: 'Daje 10/20/30% szansy na to, aby zmniejszyć prędkość ataku przeciwnika, po jego uderzeniu.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Double Haul (I)',
+    pl: 'Podwójny łów',
+    tool: '🎣',
+    desc: 'Daje szansę na podwojenie łowienia.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of the End Dweller (I)',
+    pl: 'Klątwa Endowego Wędrownika',
+    tool: '⛑️🧥🦵👞',
+    desc: 'Zmniejsza grawitację, zwiększa prędkość ruchu i ataku w Endzie.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Energized Punch (I-II)',
+    pl: 'Energiczne uderzenie',
+    tool: '🥊',
+    desc: 'Po życiu shifta, zwiększa obrażenia ataku i odpycha przeciwnika.',
+    comp: 'Grappler'
+  },
+  {
+    en: 'Experienced Blocker (I-IV)',
+    pl: 'Doświadczony bloker',
+    tool: '🧤⛩🛡️',
+    desc: 'Zwiększa ilość otrzymywanego doświadczenia o 25% na poziom.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Curse of Dire Fall (I-III)',
+    pl: 'Klątwa upadku',
+    tool: '👞℧',
+    desc: 'Zwiększa obrażenia od upadku i zmniejsza bezpieczny dystans upadku.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Fang piercer (I)',
+    pl: 'Kłoprzebijacz',
+    tool: '🐕',
+    desc: 'Daje 20% przebicia pancerza psom.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Feather Falling (I-V)',
+    pl: 'Łagodny upadek',
+    tool: '👞',
+    desc: 'Zapewnia ochronę przed upadkiem i zwiększa bezpieczny dystans upadku.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Fetch (I-III)',
+    pl: 'Aport',
+    tool: '🐕',
+    desc: 'Daje 2%/6%/10% szans na to, że pies znajdzie przedmiot w danej sekundzie.',
+    comp: 'Brak'
+  },
+  {
+    en: 'Fire Aspect (I-IV)',
+    pl: 'Zaklęty ogień',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
+    desc: 'Daje efekt podpalenia po zaatakowaniu.',
+    comp: 'Leech, Venomous, Withering, Grim Reaper'
+  },
+  {
+    en: 'Fire Body (I-IV)',
+    pl: 'Zaklęty ogień',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
+    desc: 'Daje szansę 35/50/65% na podpalenie przeciwnika, po jego ataku.',
+    comp: 'Thorns, Masochist, Toxic Body, Ragebound'
+  },
+  {
+    en: 'Fire Body (I-IV)',
+    pl: 'Zaklęty ogień',
+    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
+    desc: 'Daje szansę 35/50/65% na podpalenie przeciwnika, po jego ataku.',
+    comp: 'Thorns, Masochist, Toxic Body, Ragebound'
+  }
+  
+];
+
+const tbody = document.getElementById('tableBody');
+
+function render(filter=''){
+ tbody.innerHTML='';
+ data
+   .filter(e =>
+      e.en.toLowerCase().includes(filter.toLowerCase()) ||
+      e.pl.toLowerCase().includes(filter.toLowerCase())
+   )
+   .forEach(e => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${e.en}</td>
+        <td>${e.pl}</td>
+        <td>${e.tool}</td>
+        <td>${e.desc}</td>
+        <td>${e.comp}</td>
+      `;
+      tbody.appendChild(row);
+   });
+}
+
+render();
+document.getElementById('search').addEventListener('input', e => render(e.target.value));
+</script>
+</body>
+</html>

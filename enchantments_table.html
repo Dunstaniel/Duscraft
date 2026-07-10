@@ -30,950 +30,950 @@ tr:hover{background:#202020}
 // Dopisujesz kolejne enchanty tutaj:
 const data = [
   {
-    en: 'Animal Protection (I-V)',
-    pl: 'Ochrona dla zwierząt',
-    tool: '🐎🐕👻',
-    desc: 'Zapewnia 15% ochrony na poziom przed każdym typem obrażeń.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Antismasher (I)',
-    pl: 'Antyzgniatacz',
-    tool: '⛑️',
-    desc: 'Zapewnia 80% ochrony przed obrażeniam od buzdyganu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Aqua Affinity (I)',
-    pl: 'Wydajność pod wodą',
-    tool: '⛑️',
-    desc: 'Przyspiesza kopanie pod wodą.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Autosmelter (I)',
-    pl: 'Autoprzepalanie',
-    tool: '⛏️🪓🥄𓌳',
-    desc: 'Przepala automatycznie materiały, które wydobywasz.',
-    comp: 'Fortune, Silk Touch'
-  },
-  {
-    en: 'Curse of Backlash (I)',
-    pl: 'Klątwa odwetu',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
-    desc: 'Daje 15% szansy na to, że podczas ataku, od 1-4 obrażeń zostanie zwróconych przeciwko Tobie.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Backstep (I-III)',
-    pl: 'Zwód',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
-    desc: 'Daje możliwość odskoku do tyłu, jeżeli się użyje skradania podczas ataku.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Banditos bane (I-V)',
-    pl: 'Pogromca bandytów',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
-    desc: 'Zwiększa obrażenia do wszystkich Illagerów i graczy określonych jako bandyci. Dodatkowo daje efekt osłabienia zaatkowanemu bandycie.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bane of Arthropods (I-V)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bash (I-III)',
-    pl: 'Rąbnięcie',
-    tool: '🛡️',
-    desc: 'Dzięki tarczy zadajesz dodatkowe 1 obrażenie na poziom.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bears Soul (I)',
-    pl: 'Dusza niedźwiedzia',
-    tool: '🐕',
-    desc: 'Zwiększa rozmiar i obrażenia psa, kosztem jego prędkości.',
-    comp: 'Scorpions Soul, Crows Soul, True Nature'
-  },
-  {
-    en: 'Curse of Binding (I)',
-    pl: '-',
-    tool: 'any',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bite (I-II)',
-    pl: 'Ugryzienie',
-    tool: '🐕',
-    desc: 'Zwiększa obrażenia psa o 2/5 w zależności od poziomu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Blast Protection (I-V)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Bluntness (I)',
-    pl: 'Klątwa tępego ostrza',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱⚚🔨',
-    desc: 'Zmniejsza obrażenia o połowę.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bombastic (I)',
-    pl: 'Bombastyczny',
-    tool: '🪓',
-    desc: 'Dodaje 35% szansy na to, że po ataku z siekiery nastąpi wybuch.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Bonk (I-III)',
-    pl: 'Bonk',
-    tool: '🔨',
-    desc: 'Dodaje 5/10/15% szansy na to, że po ataku z buzdyganu spowolnisz przeciwnika i wprowadzisz u niego zawroty głowy.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Brawler (I-III)',
-    pl: 'Zabijaka',
-    tool: '🥊',
-    desc: 'Dodaje 1/1,5/2 obrażeń do głównej rękawicy.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Breach (I-IV)',
-    pl: 'Przedarcie',
-    tool: '🪓🔨🔫',
-    desc: 'Dodaje 15-60% przebicia pancerza.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Butcher (I-V)',
-    pl: 'Rzeźnik',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
-    desc: 'Zwiększa obrażenia do zwierząt oraz Piglinów.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Channeling (I)',
-    pl: 'Porażenie',
-    tool: '🔱🔨',
-    desc: 'W czasie burzy, po ataku, przywołujesz piorun.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Crows Soul (I)',
-    pl: 'Dusza Kruka',
-    tool: '🐕',
-    desc: 'Zmniejsza rozmiar i obrażenia psa, zwiększa jego skoczność i prędkość oraz zapewnia efekt oślepienia po zaatakowaniu.',
-    comp: 'Scorpions Soul, Bears Soul, True Nature'
-  },
-  {
-    en: 'Defensive Stance (I)',
-    pl: 'Obronna postawa',
-    tool: '🦯',
-    desc: 'Daje 30% odporności przed obrażeniami, kiedy się skradasz.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Density (I-V)',
-    pl: 'Masywność',
-    tool: '🔨',
-    desc: 'Zwiększa obrażenia ataku buzdyganem.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Depth Strider (I-III)',
-    pl: 'Głębinowy wędrowiec',
-    tool: '👞',
-    desc: 'Zmniejsza negatywny wpływ wody na poruszanie się.',
-    comp: 'Sand Strider, Frost Walker'
-  },
-  {
-    en: 'Dexterity (I)',
-    pl: 'Zręczność',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
-    desc: 'Zwiększa prędkość ataku po każdym uderzeniu, a po 3 atakach daje efekt siły I.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Disability (I)',
-    pl: 'Klątwa upośledzenia',
-    tool: '🦵℧',
-    desc: 'Zwiększa prędkość ataku po każdym uderzeniu, a po 3 atakach daje efekt siły I.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Disruption (I-III)',
-    pl: 'Zakłócenie',
-    tool: '🛡️',
-    desc: 'Daje 10/20/30% szansy na to, aby zmniejszyć prędkość ataku przeciwnika, po jego uderzeniu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Double Haul (I)',
-    pl: 'Podwójny łów',
-    tool: '🎣',
-    desc: 'Daje szansę na podwojenie łowienia.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Efficiency (I-V)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of the End Dweller (I)',
-    pl: 'Klątwa Endowego Wędrownika',
-    tool: '⛑️🧥🦵👞',
-    desc: 'Zmniejsza grawitację, zwiększa prędkość ruchu i ataku w Endzie.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Energized Punch (I-II)',
-    pl: 'Energiczne uderzenie',
-    tool: '🥊',
-    desc: 'Po życiu shifta, zwiększa obrażenia ataku i odpycha przeciwnika.',
-    comp: 'Grappler'
-  },
-  {
-    en: 'Experienced Blocker (I-IV)',
-    pl: 'Doświadczony bloker',
-    tool: '🧤⛩🛡️',
-    desc: 'Zwiększa ilość otrzymywanego doświadczenia o 25% na poziom.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Dire Fall (I-III)',
-    pl: 'Klątwa upadku',
-    tool: '👞℧',
-    desc: 'Zwiększa obrażenia od upadku i zmniejsza bezpieczny dystans upadku.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fang piercer (I)',
-    pl: 'Kłoprzebijacz',
-    tool: '🐕',
-    desc: 'Daje 20% przebicia pancerza psom.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Feather Falling (I-V)',
-    pl: 'Łagodny upadek',
-    tool: '👞',
-    desc: 'Zapewnia ochronę przed upadkiem i zwiększa bezpieczny dystans upadku.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fetch (I-III)',
-    pl: 'Aport',
-    tool: '🐕',
-    desc: 'Daje 2%/6%/10% szans na to, że pies znajdzie przedmiot w danej sekundzie.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fire Aspect (I-IV)',
-    pl: 'Zaklęty ogień',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
-    desc: 'Daje efekt podpalenia po zaatakowaniu.',
-    comp: 'Leech, Venomous, Withering, Grim Reaper'
-  },
-  {
-    en: 'Fire Body (I-III)',
-    pl: 'Zaklęty ogień',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
-    desc: 'Daje szansę 35/50/65% na podpalenie przeciwnika, po jego ataku.',
-    comp: 'Thorns, Masochist, Toxic Body, Ragebound'
-  },
-  {
-    en: 'Curse of Neverending Flames (I)',
-    pl: 'Klątwa niekończącego się ognia.',
-    tool: '⛑️🧥🦵👞',
-    desc: 'Wydłuża czas podpalenia 2-krotnie.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fire Protection (I-V)',
-    pl: 'Ochrona przed ogniem',
-    tool: '⚔️🪓𓌳🥊↗🦯🔱🔨',
-    desc: 'Zmniejsza obrażenia od ognia i skraca czas bycia podpalonym.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fish Hunter (I)',
-    pl: 'Łowca ryb',
-    tool: '🔱',
-    desc: 'Dodaje 19 obrażeń do ataku, jeżeli przeciwnikiem jest ryba.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Flame (I)',
-    pl: 'Płomień',
-    tool: '🏹🔫',
-    desc: 'Podpala przeciwnika',
-    comp: 'Frostbite'
-  },
-  {
-    en: 'Fleer (I-III)',
-    pl: '-',
-    tool: '🦵',
-    desc: 'Daje 5/15/25% szans na to, że po ataku przeciwnika, aktywuje się efekt szybkości.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Fortune (I-V)',
-    pl: 'Szczęście',
-    tool: '⛏️🪓🥄𓌳',
-    desc: 'Zwiększa ilość dropów z rud itp.',
-    comp: 'Silk Touch, Autosmelter'
-  },
-  {
-    en: 'Curse of Fragility (I)',
-    pl: '-',
-    tool: 'Any',
-    desc: 'Zwiększa zużycie przedmiotu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Frost Walker (I-II)',
-    pl: 'Mroźny Piechur',
-    tool: '👞',
-    desc: 'Tworzy lód po kontakcie z wodą oraz pozwala na chodzenie po blokoach magmy.',
-    comp: 'Sand Strider, Depth Strider'
-  },
-  {
-    en: 'Frost Walker (I-II)',
-    pl: 'Mroźny Piechur',
-    tool: '👞',
-    desc: 'Tworzy lód po kontakcie z wodą oraz pozwala na chodzenie po blokoach magmy.',
-    comp: 'Sand Strider, Depth Strider'
-  },
-  {
-    en: 'Frostbite',
-    pl: 'Odmrożenie',
-    tool: '-',
-    desc: 'Wystrzelony pocisk spowalnia znacznie moba/gracza.',
-    comp: 'Flame'
-  },
-  {
-    en: 'Gallop',
-    pl: 'Galop',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Gambling',
-    pl: 'Klątwa Hazardzisty',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Gemfinder',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Grappler',
-    pl: 'Chwytacz',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Grim Reaper',
-    pl: 'Ponury Żniwiarz',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Groundslam',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Hearthlessness',
-    pl: 'Klątwa Bezsercności',
-    tool: '-',
-    desc: 'Sprawia, że postać traci swoje 2 max HP podczas korzystania z przeklętego przedmiotu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Heaviness',
-    pl: 'Klątwa ciężkości',
-    tool: '-',
-    desc: 'Sprawia, że postać porusza się wolniej podczas korzystania z przeklętego przedmiotu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Heavy push',
-    pl: '-',
-    tool: '-',
-    desc: 'Po użyciu shifta można odepchnąć przeciwnika.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Hellforged',
-    pl: '-',
-    tool: '-',
-    desc: 'Będąc podpalonym lub/i w lawie - aktywne przedmioty ulegają odnowieniu.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Helping Hand',
-    pl: '-',
-    tool: '-',
-    desc: 'Zwiększa zasięg stawiania bloków oraz zasięg przyciągania zwierząt.',
-    comp: 'Brak'
-  },
-  {
-    en: 'Hero Slayer',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Hollowness',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Horse Crippler',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Impailing',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Infinity',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Insecurity',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Jumper',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Knockback',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Leech',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Looting',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Loyalty',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Luck of the sea',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Lucky Block',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Lunge',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Lure',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Magic Block',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Magic Protection',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Masochist',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Mending',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Merrion',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Mounted',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Multishot',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of the Helldiver',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Nimble grip',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Penetration',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Piercing',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Power',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Procrastination',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Projectile Protection',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Protection',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Punch',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Quick charge',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Ragebound',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Rainforge',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Repeater',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Rustiness',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Sand Strider',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Scent',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Scorpions Soul',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Scout',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Scutum',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Seaman',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Shadow Strike',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Sharpness',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Silk Touch (I)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Skydiver (I-III)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Sloths Hand',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Smite (I-V)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Smoke (I)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Solar Bloom (I)',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Soul Collector',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Soul Speed',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Spike',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Spores',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Spreadshot',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Stepping',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Sun Aegis',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Sweeping Edge',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Swift hands',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Swift Sneak',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Switcher',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Thirst',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Thorns',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Lighting Magnet',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Toxic Body',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'True Calling',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of the Forsaken Surface',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Unbreaking',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Unmoveable',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Vanishing',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Venomous (I-)',
-    pl: 'Jadowity',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Curse of Toxic Waters',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Wind Burst',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Wind Walker',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Withering',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  },
-  {
-    en: 'Wrath of Fire',
-    pl: '-',
-    tool: '-',
-    desc: 'Desc',
-    comp: 'Brak'
-  }
+  en: "Animal Protection (I-V)",
+  pl: "Ochrona Zwierząt",
+  tool: "🐎🐕",
+  desc: "Zmniejsza obrażenia otrzymywane od zwierząt. Każdy poziom zwiększa wartość ochrony o 3 punkty, dzięki czemu zaklęcie skuteczniej chroni przed atakami stworzeń zaliczanych do zwierząt.",
+  comp: "Brak"
+},
+{
+  en: "Antismasher (I)",
+  pl: "Antyzgniatacz",
+  tool: "⛑️",
+  desc: "Zapewnia maksymalną ochronę przed obrażeniami zadawanymi specjalnym uderzeniem buzdyganu (Mace Smash). Idealny przeciw graczom korzystającym z buzdyganu.",
+  comp: "Brak"
+},
+{
+  en: "Aqua Affinity (I)",
+  pl: "Wydajność pod wodą",
+  tool: "⛑️",
+  desc: "Znacznie zwiększa prędkość kopania pod wodą. W tej wersji datapacka zapewnia wielokrotnie większą szybkość wydobywania niż w podstawowym Minecraftcie.",
+  comp: "Brak"
+},
+{
+  en: "Autosmelter (I)",
+  pl: "Autoprzepalanie",
+  tool: "⛏️🪓🥄𓌳",
+  desc: "Automatycznie przetapia wydobywane bloki i surowce, jeśli posiadają odpowiedni wynik w piecu. Pozwala od razu otrzymywać gotowe materiały bez używania pieca.",
+  comp: "Fortune, Silk Touch"
+},
+{
+  en: "Curse of Backlash (I)",
+  pl: "Klątwa Odwetu",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱⚚🔨",
+  desc: "Każdy atak ma 15% szans na odbicie przeciwko właścicielowi broni. W przypadku aktywacji otrzymujesz od 1 do 4 punktów obrażeń.",
+  comp: "Brak"
+},
+{
+  en: "Backstep (I-III)",
+  pl: "Zwód",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱⚚🔨",
+  desc: "Uderzenie wykonane podczas skradania powoduje szybki odskok do tyłu. Siła odskoku rośnie wraz z poziomem zaklęcia. Aktywacja zużywa 1 punkt wytrzymałości przedmiotu i zwiększa zmęczenie gracza.",
+  comp: "Brak"
+},
+{
+  en: "Banditos' Bane (I-V)",
+  pl: "Pogromca Bandytów",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱⚚🔨",
+  desc: "Zwiększa obrażenia przeciw Illagerom oraz wszystkim jednostkom oznaczonym jako bandyci. Trafiony przeciwnik otrzymuje dodatkowo efekt Osłabienia, którego czas działania rośnie wraz z poziomem zaklęcia.",
+  comp: "Brak"
+},
+{
+  en: "Bane of Arthropods (I-V)",
+  pl: "Zmora Stawonogów",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱⚚🔨",
+  desc: "Zwiększa obrażenia przeciw pająkom, pszczołom, srebrzykom i pozostałym stawonogom. Bezpośrednie trafienie dodatkowo nakłada efekt Spowolnienia.",
+  comp: "Brak"
+},
+{
+  en: "Bash (I-III)",
+  pl: "Rąbnięcie",
+  tool: "🛡️",
+  desc: "Zwiększa obrażenia zadawane podczas atakowania tarczą. Każdy poziom dodaje +1 do obrażeń.",
+  comp: "Brak"
+},
+{
+  en: "Bear's Soul (I)",
+  pl: "Dusza Niedźwiedzia",
+  tool: "🐕",
+  desc: "Przemienia wilka w potężniejszego towarzysza. Zwiększa jego rozmiar, prędkość poruszania oraz obrażenia, a każdy atak dodatkowo nakłada na przeciwnika efekt Spowolnienia.",
+  comp: "Scorpion's Soul, Crow's Soul, True Nature"
+},
+{
+  en: "Curse of Binding (I)",
+  pl: "Klątwa Związania",
+  tool: "Dowolny element pancerza",
+  desc: "Po założeniu przedmiot nie może zostać zdjęty, dopóki nie zginiesz lub nie znajdziesz innego sposobu na pozbycie się klątwy.",
+  comp: "Brak"
+},
+{
+  en: "Bite (I-II)",
+  pl: "Ugryzienie",
+  tool: "🐕",
+  desc: "Zwiększa obrażenia zadawane przez wilka. Wartość rośnie wraz z poziomem zaklęcia według kwadratowej skali, dzięki czemu drugi poziom jest wyraźnie silniejszy od pierwszego.",
+  comp: "Brak"
+},
+{
+  en: "Blast Protection (I-V)",
+  pl: "Ochrona przed Wybuchami",
+  tool: "⛑️🧥🦵👞",
+  desc: "Zmniejsza obrażenia od eksplozji oraz zwiększa odporność na odrzut wywołany wybuchami. Każdy poziom dodatkowo poprawia oba efekty.",
+  comp: "Protection, Fire Protection, Projectile Protection, Magic Protection"
+},
+{
+  en: "Curse of Bluntness (I)",
+  pl: "Klątwa Tępego Ostrza",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱⚚🔨",
+  desc: "Znacznie osłabia broń. Wszystkie zadawane obrażenia zostają zmniejszone o połowę.",
+  comp: "Brak"
+},
+{
+  en: "Bombastic (I)",
+  pl: "Bombastyczny",
+  tool: "🪓",
+  desc: "Bezpośrednie trafienie siekierą ma 35% szans na wywołanie niewielkiej eksplozji przy celu. Wybuch odrzuca przeciwnika i zadaje obrażenia, ale nie niszczy bloków ani nie powoduje pożaru.",
+  comp: "Brak"
+},
+{
+  en: "Bonk (I-III)",
+  pl: "Bonk",
+  tool: "🔨",
+  desc: "Każde trafienie buzdyganem ma 5/10/15% szans na ogłuszenie przeciwnika. Po aktywacji cel otrzymuje Silne Spowolnienie IV oraz Nudności na kilka sekund, co utrudnia ucieczkę i kontratak.",
+  comp: "Brak"
+},
+{
+  en: "Brawler (I-III)",
+  pl: "Zabijaka",
+  tool: "🥊",
+  desc: "Zwiększa obrażenia zadawane rękawicami. Każdy kolejny poziom dodaje dodatkowe 0,5 obrażenia, osiągając +2 obrażenia na III poziomie.",
+  comp: "Brak"
+},
+{
+  en: "Breach (I-IV)",
+  pl: "Przedarcie",
+  tool: "🪓🔨🔫",
+  desc: "Zmniejsza skuteczność pancerza przeciwnika o 15% na poziom. Na najwyższym poziomie aż 60% ochrony celu zostaje zignorowane, dzięki czemu zaklęcie świetnie sprawdza się przeciw ciężko opancerzonym przeciwnikom.",
+  comp: "Brak"
+},
+{
+  en: "Butcher (I-V)",
+  pl: "Rzeźnik",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱🔨",
+  desc: "Zwiększa obrażenia zadawane wszystkim zwierzętom. Premia rośnie z każdym poziomem, dlatego zaklęcie sprawdza się zarówno podczas polowań, jak i walki z agresywną fauną.",
+  comp: "Brak"
+},
+{
+  en: "Channeling (I)",
+  pl: "Porażenie",
+  tool: "🔱🔨",
+  desc: "Podczas burzy przywołuje piorun po trafieniu przeciwnika trójzębem. W tej wersji datapacka działa również z buzdyganem wykonującym atak z wyskoku. Uderzenie wymaga otwartego nieba.",
+  comp: "Brak"
+},
+{
+  en: "Crow's Soul (I)",
+  pl: "Dusza Kruka",
+  tool: "🐕",
+  desc: "Zmniejsza rozmiar wilka, ale znacznie zwiększa jego szybkość i wysokość skoku. Kosztem części obrażeń każdy udany atak dodatkowo oślepia przeciwnika.",
+  comp: "Bear's Soul, Scorpion's Soul, True Nature"
+},
+{
+  en: "Defensive Stance (I)",
+  pl: "Obronna Postawa",
+  tool: "🦯",
+  desc: "Podczas skradania zapewnia dodatkową ochronę odpowiadającą 30% redukcji obrażeń. Efekt działa wyłącznie wtedy, gdy gracz pozostaje w pozycji skradania.",
+  comp: "Brak"
+},
+{
+  en: "Density (I-V)",
+  pl: "Masywność",
+  tool: "🔨",
+  desc: "Zwiększa obrażenia specjalnego uderzenia buzdyganem. Każdy poziom dodaje kolejne 0,5 obrażenia za każdy przebyty blok spadania, dzięki czemu wysokie skoki stają się jeszcze groźniejsze.",
+  comp: "Brak"
+},
+{
+  en: "Depth Strider (I-III)",
+  pl: "Głębinowy Wędrowiec",
+  tool: "👞",
+  desc: "Zwiększa szybkość poruszania się pod wodą. Każdy poziom usuwa część ograniczeń ruchu, a na III poziomie pływanie jest niemal tak swobodne jak chodzenie po lądzie.",
+  comp: "Sand Strider, Frost Walker"
+},
+{
+  en: "Dexterity (I)",
+  pl: "Zręczność",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱🔨",
+  desc: "Każde kolejne trafienie buduje serię zwiększającą szybkość ataku (Haste I → II → III). Po osiągnięciu najwyższego poziomu serii otrzymujesz dodatkowo efekt Siły I, nagradzając agresywny styl walki.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Disability (I)",
+  pl: "Klątwa Upośledzenia",
+  tool: "🦵℧",
+  desc: "Znacznie utrudnia poruszanie się. Mocno zmniejsza szybkość skradania oraz ogranicza wysokość skoku, przez co eksploracja i walka stają się zdecydowanie trudniejsze.",
+  comp: "Brak"
+},
+{
+  en: "Disruption (I-III)",
+  pl: "Zakłócenie",
+  tool: "🛡️",
+  desc: "Po otrzymaniu ciosu tarcza ma 10/20/30% szans na osłabienie napastnika. Przeciwnik zostaje dotknięty Zmęczeniem (Mining Fatigue), które spowalnia jego kolejne ataki.",
+  comp: "Brak"
+},
+{
+  en: "Double Haul (I)",
+  pl: "Podwójny Łów",
+  tool: "🎣",
+  desc: "Daje szansę na wyłowienie podwójnej ilości przedmiotów z jednego udanego połowu, zwiększając wydajność wędkowania.",
+  comp: "Brak"
+},
+{
+  en: "Efficiency (I-V)",
+  pl: "Wydajność",
+  tool: "⛏️🪓🥄𓌳",
+  desc: "Znacznie zwiększa szybkość wydobywania bloków. Bonus rośnie kwadratowo wraz z poziomem zaklęcia, dlatego najwyższe poziomy są zauważalnie skuteczniejsze od pierwszych.",
+  comp: "Brak"
+},
+{
+  en: "Curse of the End Dweller (I)",
+  pl: "Klątwa Endowego Wędrownika",
+  tool: "⛑️🧥🦵👞",
+  desc: "Po wejściu do Endu zmniejsza grawitację oraz znacząco zwiększa prędkość ruchu i szybkość ataku. Klątwa działa wyłącznie w tym wymiarze, całkowicie zmieniając styl poruszania się podczas eksploracji.",
+  comp: "Brak"
+},
+{
+  en: "Energized Punch (I-II)",
+  pl: "Energiczne Uderzenie",
+  tool: "🥊",
+  desc: "Atak wykonany podczas skradania zadaje dodatkowe obrażenia i odrzuca przeciwnika do tyłu oraz lekko w górę. Premia do obrażeń rośnie wraz z poziomem zaklęcia, dzięki czemu świetnie sprawdza się do rozpoczynania walki lub zrzucania przeciwników z wysokości.",
+  comp: "Grappler"
+},
+{
+  en: "Experienced Blocker (I-IV)",
+  pl: "Doświadczony Bloker",
+  tool: "🛡️",
+  desc: "Zwiększa ilość zdobywanego doświadczenia zarówno z wydobywania bloków, jak i pokonywania mobów. Premia wynosi od +25% na I poziomie do +100% na IV poziomie.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Dire Fall (I-III)",
+  pl: "Klątwa Upadku",
+  tool: "👞🐎",
+  desc: "Znacznie zwiększa obrażenia od upadku oraz zmniejsza bezpieczną wysokość spadania. Każdy poziom pogarsza oba efekty, przez co nawet niewielki upadek może okazać się niebezpieczny.",
+  comp: "Brak"
+},
+{
+  en: "Fang Piercer (I)",
+  pl: "Kłoprzebijacz",
+  tool: "🐕",
+  desc: "Wilk ignoruje 20% skuteczności pancerza przeciwnika. Dzięki temu zadaje znacznie większe obrażenia dobrze opancerzonym celom.",
+  comp: "Brak"
+},
+{
+  en: "Feather Falling (I-V)",
+  pl: "Łagodny Upadek",
+  tool: "👞",
+  desc: "Zmniejsza obrażenia od upadku oraz zwiększa bezpieczną wysokość, z której można spaść bez obrażeń. Każdy poziom dodaje kolejne 2 punkty ochrony i zwiększa bezpieczny dystans o 1 blok.",
+  comp: "Brak"
+},
+{
+  en: "Fetch (I-III)",
+  pl: "Aport",
+  tool: "🐕",
+  desc: "Podczas poruszania się wilk ma niewielką szansę znaleźć i przynieść losowy przedmiot. Szansa rośnie z poziomem zaklęcia, dzięki czemu aktywny towarzysz może regularnie zdobywać drobne zasoby.",
+  comp: "Brak"
+},
+{
+  en: "Fire Aspect (I-IV)",
+  pl: "Zaklęty Ogień",
+  tool: "⚔️🪓𓌳🥊↗🦯🔱🔨",
+  desc: "Bezpośrednie trafienie podpala przeciwnika. Czas płonięcia wynosi od 4 do 16 sekund i rośnie wraz z poziomem zaklęcia.",
+  comp: "Leech, Venomous, Withering, Grim Reaper"
+},
+{
+  en: "Fire Body (I-III)",
+  pl: "Płonące Ciało",
+  tool: "🧥🐕",
+  desc: "Po otrzymaniu ciosu istnieje 35/50/65% szans na podpalenie napastnika. Aktywacja dodatkowo zużywa niewielką ilość wytrzymałości zaklętego przedmiotu.",
+  comp: "Thorns, Masochist, Toxic Body, Ragebound"
+},
+{
+  en: "Curse of Neverending Flames (I)",
+  pl: "Klątwa Niekończącego się Ognia",
+  tool: "⛑️🧥🦵👞",
+  desc: "Dwukrotnie wydłuża czas pozostawania w ogniu. Każde podpalenie trwa znacznie dłużej, niezależnie od jego źródła.",
+  comp: "Brak"
+},
+{
+  en: "Fire Protection (I-V)",
+  pl: "Ochrona przed Ogniem",
+  tool: "⛑️🧥🦵👞",
+  desc: "Zmniejsza obrażenia od ognia oraz skraca czas płonięcia. Każdy poziom redukuje czas podpalenia o dodatkowe 5% i zwiększa ochronę przed obrażeniami od ognia.",
+  comp: "Protection, Blast Protection, Projectile Protection, Magic Protection"
+},
+{
+  en: "Fish Hunter (I)",
+  pl: "Łowca Ryb",
+  tool: "🎣",
+  desc: "Specjalistyczne zaklęcie dla wędki zwiększające skuteczność walki z rybami i innymi wodnymi stworzeniami. Sprawdza się szczególnie podczas polowań pod wodą.",
+  comp: "Brak"
+},
+{
+  en: "Flame (I)",
+  pl: "Płomień",
+  tool: "🏹🔫",
+  desc: "Wystrzelone pociski podpalają trafiony cel przez 5 sekund. Działa ze wszystkimi broniami dystansowymi obsługującymi to zaklęcie.",
+  comp: "Frostbite"
+},
+{
+  en: "Fleer (I-III)",
+  pl: "Uciekinier",
+  tool: "🦵",
+  desc: "Po otrzymaniu obrażeń istnieje 5/15/25% szans na otrzymanie efektu Szybkości I przez 2-6 sekund. Im wyższy poziom, tym większa szansa i dłuższy czas działania.",
+  comp: "Brak"
+},
+{
+  en: "Fortune (I-V)",
+  pl: "Szczęście",
+  tool: "⛏️🪓🥄𓌳",
+  desc: "Zwiększa liczbę przedmiotów otrzymywanych z rud i innych bloków korzystających z tabel wydobycia. W Twoim datapacku obsługuje również niestandardowe loot table.",
+  comp: "Silk Touch, Autosmelter"
+},
+{
+  en: "Curse of Fragility (I)",
+  pl: "Klątwa Kruchości",
+  tool: "Dowolny przedmiot",
+  desc: "Za każdym razem, gdy przedmiot traci wytrzymałość, istnieje 50% szans na otrzymanie dodatkowych 2 punktów uszkodzenia. Przedmiot zużywa się więc znacznie szybciej niż normalnie.",
+  comp: "Brak"
+},
+{
+  en: "Frost Walker (I-II)",
+  pl: "Mroźny Piechur",
+  tool: "👞",
+  desc: "Zamienia wodę pod stopami w lód i pozwala bezpiecznie chodzić po blokach magmy. Wyższy poziom zwiększa promień działania zaklęcia.",
+  comp: "Depth Strider, Sand Strider"
+},
+{
+  en: "Frostbite (I)",
+  pl: "Odmrożenie",
+  tool: "🏹🔫",
+  desc: "Pociski wystrzelone z broni dystansowej nakładają na trafiony cel bardzo silne Spowolnienie (Slowness VII) trwające od 2 do 5 sekund. Doskonale nadaje się do unieruchamiania przeciwników.",
+  comp: "Flame"
+},
+{
+  en: "Gallop (I-IV)",
+  pl: "Galop",
+  tool: "🐎",
+  desc: "Zwiększa prędkość poruszania się wierzchowca. Każdy poziom dodaje kolejne 10% bazowej prędkości, dzięki czemu koń staje się wyraźnie szybszy.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Gambling (I)",
+  pl: "Klątwa Hazardzisty",
+  tool: "Dowolny przedmiot",
+  desc: "Nieprzewidywalna klątwa zmieniająca przebieg walki. Korzystanie z przeklętego przedmiotu wiąże się z losowymi efektami, które mogą zarówno pomóc, jak i zaszkodzić właścicielowi.",
+  comp: "Brak"
+},
+{
+  en: "Gemfinder (I-III)",
+  pl: "Poszukiwacz Klejnotów",
+  tool: "⛏️",
+  desc: "Rzadkie zaklęcie dla kilofów zwiększające szansę odnalezienia ukrytych cennych zasobów podczas wydobywania. Dostępne wyłącznie dla kilofów.",
+  comp: "Brak"
+},
+{
+  en: "Grappler (I-II)",
+  pl: "Chwytacz",
+  tool: "🥊",
+  desc: "Atak wykonany podczas skradania przyciąga trafionego przeciwnika do gracza. Dodatkowo chwilowo spowalnia ofiarę i zwiększa zasięg interakcji z przeciwnikami podczas skradania.",
+  comp: "Energized Punch"
+},
+{
+  en: "Grim Reaper (I)",
+  pl: "Ponury Żniwiarz",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Każde trafienie nakłada na przeciwnika efekt Ciemności. Dodatkowo istnieje 25% szans na bardzo silną Lewitację, która wyrzuca ofiarę wysoko w powietrze.",
+  comp: "Fire Aspect, Leech, Venomous, Withering"
+},
+{
+  en: "Groundslam (I-III)",
+  pl: "Uderzenie o Ziemię",
+  tool: "🔨",
+  desc: "Po trafieniu istnieje od 20% do 30% szans na wywołanie fali uderzeniowej. Efekt zadaje dodatkowe obrażenia, odtwarza specjalny efekt dźwiękowy i uruchamia niestandardową funkcję Ground Slam.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Heartlessness (I)",
+  pl: "Klątwa Bezsercowości",
+  tool: "Dowolny przedmiot",
+  desc: "Zmniejsza maksymalne zdrowie gracza o 2 serca podczas korzystania z przeklętego przedmiotu.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Heaviness (I)",
+  pl: "Klątwa Ciężkości",
+  tool: "Dowolny przedmiot",
+  desc: "Znacznie zmniejsza prędkość poruszania się podczas trzymania lub noszenia przeklętego przedmiotu.",
+  comp: "Brak"
+},
+{
+  en: "Heavy Push (I-III)",
+  pl: "Potężne Odepchnięcie",
+  tool: "🛡️",
+  desc: "Podczas skradania znacznie zwiększa siłę odrzutu zadawanego przeciwnikom. Jednocześnie zwiększa również obrażenia zadawane takim uderzeniem.",
+  comp: "Brak"
+},
+{
+  en: "Hellforged (I-III)",
+  pl: "Piekielna Kuźnia",
+  tool: "⚔️🪓⛏️🧥",
+  desc: "Przedmiot sam naprawia swoją wytrzymałość podczas przebywania w lawie lub gdy właściciel płonie. Im wyższy poziom zaklęcia, tym częściej następuje regeneracja.",
+  comp: "Brak"
+},
+{
+  en: "Helping Hand (I)",
+  pl: "Pomocna Dłoń",
+  tool: "🧤",
+  desc: "Zwiększa zasięg stawiania i używania bloków o 4 bloki oraz znacząco zwiększa odległość, z której zwierzęta reagują na trzymane jedzenie.",
+  comp: "Brak"
+},
+{
+  en: "Hero Slayer (I-V)",
+  pl: "Pogromca Bohaterów",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Zadaje znacznie większe obrażenia mieszkańcom, żelaznym i śnieżnym golemom, wilkom oraz wszystkim jednostkom, które nie są oznaczone jako bandyci. Trafieni przeciwnicy zostają dodatkowo spowolnieni.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Hollowness (I)",
+  pl: "Klątwa Pustki",
+  tool: "Dowolny przedmiot",
+  desc: "Niebezpieczna klątwa dająca 20% szans na całkowite anulowanie zadawanych obrażeń. Trafienia mogą więc nagle przestać wyrządzać jakąkolwiek krzywdę przeciwnikowi.",
+  comp: "Brak"
+},
+{
+  en: "Horse Crippler (I)",
+  pl: "Kaleczyciel Wierzchowców",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Po trafieniu wierzchowca (konia, wielbłąda oraz ich odpowiedników) nakłada efekt Spowolnienia I na 5-10 sekund. Skutecznie utrudnia ucieczkę przeciwnikowi dosiadającemu zwierzęcia.",
+  comp: "Brak"
+},
+{
+  en: "Impaling (I-V)",
+  pl: "Przebicie",
+  tool: "🔱",
+  desc: "Zwiększa obrażenia zadawane stworzeniom podatnym na przebicie. W tej wersji działa również na cele znajdujące się w wodzie oraz na istoty stojące na otwartym terenie podczas deszczu.",
+  comp: "Brak"
+},
+{
+  en: "Infinity (I)",
+  pl: "Nieskończoność",
+  tool: "🏹",
+  desc: "Pozwala strzelać z łuku bez zużywania zwykłych strzał, o ile w ekwipunku znajduje się przynajmniej jedna.",
+  comp: "Mending"
+},
+{
+  en: "Curse of Insecurity (I)",
+  pl: "Klątwa Niepewności",
+  tool: "Dowolny przedmiot",
+  desc: "Zmniejsza zdobywane doświadczenie. Zarówno doświadczenie z bloków, jak i z mobów zostaje ograniczone do 40% normalnej wartości.",
+  comp: "Brak"
+},
+{
+  en: "Jumper (I)",
+  pl: "Skoczek",
+  tool: "👞",
+  desc: "Podczas skradania każdy wykonany skok zapewnia bardzo silny efekt Jump Boost IX na krótką chwilę, umożliwiając wykonywanie wysokich wyskoków.",
+  comp: "Brak"
+},
+{
+  en: "Knockback (I-II)",
+  pl: "Odrzut",
+  tool: "⚔️",
+  desc: "Zwiększa siłę odrzutu zadawanego przeciwnikom przy każdym trafieniu. Wyższe poziomy odpychają cel na większą odległość.",
+  comp: "Brak"
+},
+{
+  en: "Leech (I-III)",
+  pl: "Wysysanie",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Przywraca część zdrowia po udanym trafieniu przeciwnika. Ilość odzyskanego życia rośnie wraz z poziomem zaklęcia.",
+  comp: "Fire Aspect, Venomous, Withering, Grim Reaper"
+},
+{
+  en: "Looting (I-III)",
+  pl: "Grabież",
+  tool: "⚔️",
+  desc: "Zwiększa liczbę przedmiotów wypadających z pokonanych mobów oraz poprawia szansę na rzadsze łupy.",
+  comp: "Brak"
+},
+{
+  en: "Loyalty (I-III)",
+  pl: "Lojalność",
+  tool: "🔱",
+  desc: "Po rzuceniu trójząb automatycznie wraca do właściciela. Wyższe poziomy skracają czas powrotu.",
+  comp: "Brak"
+},
+{
+  en: "Lucky Block (I-III)",
+  pl: "Szczęśliwy Traf",
+  tool: "⛏️🪓⚔️",
+  desc: "Zwiększa statystykę Szczęścia o +1 na poziom oraz daje 4/7/10% szans na całkowite zignorowanie otrzymanych obrażeń.",
+  comp: "Brak"
+},
+{
+  en: "Luck of the Sea (I-III)",
+  pl: "Morska Fortuna",
+  tool: "🎣",
+  desc: "Zmniejsza szansę na złowienie śmieci i zwiększa prawdopodobieństwo zdobycia cennych skarbów podczas wędkowania.",
+  comp: "Brak"
+},
+{
+  en: "Lunge (I-III)",
+  pl: "Szarża",
+  tool: "🔱",
+  desc: "Po wykonaniu ataku wyprowadza właściciela do przodu gwałtownym skokiem, pozwalając szybko skrócić dystans do przeciwnika.",
+  comp: "Brak"
+},
+{
+  en: "Lure (I-III)",
+  pl: "Przynęta",
+  tool: "🎣",
+  desc: "Skraca czas oczekiwania na branie, dzięki czemu ryby i skarby można łowić znacznie szybciej.",
+  comp: "Brak"
+},
+{
+  en: "Magic Block (I-III)",
+  pl: "Magiczna Blokada",
+  tool: "🛡️",
+  desc: "Zwiększa skuteczność blokowania obrażeń pochodzących od ataków magicznych i efektów specjalnych.",
+  comp: "Brak"
+},
+{
+  en: "Magic Protection (I-V)",
+  pl: "Ochrona przed Magią",
+  tool: "⛑️🧥🦵👞",
+  desc: "Zapewnia dodatkową ochronę wyłącznie przed obrażeniami oznaczonymi jako magiczne. Każdy poziom zwiększa wartość ochrony o 1 punkt.",
+  comp: "Protection, Blast Protection, Fire Protection, Projectile Protection"
+},
+{
+  en: "Masochist (I-III)",
+  pl: "Masochista",
+  tool: "🧥",
+  desc: "Każde otrzymane obrażenie zwiększa zadawane obrażenia na krótki czas. Efekt kumuluje się do określonego limitu, dzięki czemu im dłużej trwa walka, tym groźniejszy staje się właściciel zaklęcia.",
+  comp: "Fire Body, Toxic Body, Ragebound, Thorns"
+},
+{
+  en: "Mending (I)",
+  pl: "Naprawa",
+  tool: "Dowolny przedmiot",
+  desc: "Zdobywane punkty doświadczenia zamiast trafiać do paska doświadczenia naprawiają uszkodzony przedmiot posiadający to zaklęcie.",
+  comp: "Infinity"
+},
+{
+  en: "Curse of Merrion (I)",
+  pl: "Klątwa Merriona",
+  tool: "Dowolny przedmiot",
+  desc: "Przeklęty przedmiot stale osłabia właściciela. Podczas korzystania z niego gracz stopniowo otrzymuje negatywne efekty utrudniające eksplorację i walkę.",
+  comp: "Brak"
+},
+{
+  en: "Mounted (I)",
+  pl: "Jeździec",
+  tool: "⚔️🪓🔱🏹",
+  desc: "Podczas jazdy na wierzchowcu zwiększa zadawane obrażenia oraz poprawia skuteczność walki z siodła.",
+  comp: "Brak"
+},
+{
+  en: "Multishot (I)",
+  pl: "Wielostrzał",
+  tool: "🏹🔫",
+  desc: "Wystrzeliwuje jednocześnie trzy pociski. Dodatkowe strzały nie zużywają amunicji i rozchodzą się pod niewielkim kątem.",
+  comp: "Repeater, Spreadshot"
+},
+{
+  en: "Curse of the Helldiver (I)",
+  pl: "Klątwa Piekielnego Nurka",
+  tool: "⛑️🧥🦵👞",
+  desc: "Znacząco zwiększa prędkość poruszania się w Netherze, ale jednocześnie osłabia właściciela poza tym wymiarem.",
+  comp: "Brak"
+},
+{
+  en: "Nimble Grip (I-II)",
+  pl: "Pewny Chwyt",
+  tool: "🧤",
+  desc: "Przyspiesza zmianę przedmiotów w ręce oraz skraca czas używania wybranych narzędzi. Na wyższych poziomach efekt staje się jeszcze bardziej odczuwalny.",
+  comp: "Brak"
+},
+{
+  en: "Penetration (I-V)",
+  pl: "Penetracja",
+  tool: "🏹🔫",
+  desc: "Pociski ignorują część pancerza celu. Każdy poziom zwiększa procent przebicia, dzięki czemu obrażenia przeciw opancerzonym przeciwnikom są znacznie wyższe.",
+  comp: "Brak"
+},
+{
+  en: "Piercing (I-IV)",
+  pl: "Przeszycie",
+  tool: "🔫",
+  desc: "Bełty przebijają kolejnych przeciwników, nie zatrzymując się na pierwszym trafionym celu.",
+  comp: "Multishot"
+},
+{
+  en: "Power (I-V)",
+  pl: "Moc",
+  tool: "🏹",
+  desc: "Zwiększa obrażenia zadawane przez strzały. Każdy poziom dodaje kolejną premię do siły ataku łuku.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Procrastination (I)",
+  pl: "Klątwa Ociągania",
+  tool: "Dowolny przedmiot",
+  desc: "Spowalnia wykonywanie większości czynności. Ataki, kopanie i korzystanie z przedmiotów wymagają więcej czasu niż zwykle.",
+  comp: "Brak"
+},
+{
+  en: "Projectile Protection (I-V)",
+  pl: "Ochrona przed Pociskami",
+  tool: "⛑️🧥🦵👞",
+  desc: "Zmniejsza obrażenia otrzymywane od wszystkich pocisków, takich jak strzały, bełty, trójzęby czy kule ognia.",
+  comp: "Protection, Blast Protection, Fire Protection, Magic Protection"
+},
+{
+  en: "Protection (I-V)",
+  pl: "Ochrona",
+  tool: "⛑️🧥🦵👞",
+  desc: "Uniwersalne zaklęcie zwiększające odporność na większość rodzajów obrażeń. Nie działa z innymi specjalistycznymi zaklęciami ochronnymi.",
+  comp: "Blast Protection, Fire Protection, Projectile Protection, Magic Protection"
+},
+{
+  en: "Punch (I-II)",
+  pl: "Odrzut",
+  tool: "🏹",
+  desc: "Znacznie zwiększa odrzut zadawany strzałami, ułatwiając utrzymywanie przeciwników na dystans.",
+  comp: "Brak"
+},
+{
+  en: "Quick Charge (I-III)",
+  pl: "Szybkie Ładowanie",
+  tool: "🔫",
+  desc: "Skraca czas przeładowania kuszy. Każdy poziom jeszcze bardziej zmniejsza czas potrzebny na przygotowanie kolejnego strzału.",
+  comp: "Brak"
+},
+{
+  en: "Ragebound (I-III)",
+  pl: "Gniew",
+  tool: "🧥",
+  desc: "Po otrzymaniu ciosu masz szansę wpaść w bojowy szał. Otrzymujesz efekt Siły na 3-9 sekund (zależnie od poziomu), jednak każda aktywacja kosztuje 2 punkty wytrzymałości pancerza.",
+  comp: "Fire Body, Toxic Body, Masochist, Thorns"
+},
+{
+  en: "Rainforge (I-IV)",
+  pl: "Deszczowa Kuźnia",
+  tool: "⚔️🪓⛏️🧥",
+  desc: "Podczas deszczu przedmiot stopniowo sam się naprawia. Co pewien czas odzyskuje od 2 do 8 punktów wytrzymałości, jednak efekt działa wyłącznie pod otwartym niebem.",
+  comp: "Brak"
+},
+{
+  en: "Repeater (I)",
+  pl: "Repeater",
+  tool: "🔫",
+  desc: "Specjalne zaklęcie kuszy przygotowane pod niestandardową mechanikę datapacka. Sam JSON nie zawiera efektów, dlatego jego działanie realizowane jest przez funkcje datapacka.",
+  comp: "Multishot, Spreadshot"
+},
+{
+  en: "Curse of Rustiness (I)",
+  pl: "Klątwa Rdzy",
+  tool: "Dowolny przedmiot",
+  desc: "Podczas deszczu przedmiot stopniowo koroduje. Jeżeli właściciel znajduje się pod otwartym niebem, istnieje 1% szans przy każdej zmianie pozycji na dodatkowe uszkodzenie przedmiotu.",
+  comp: "Brak"
+},
+{
+  en: "Sand Strider (I-IV)",
+  pl: "Pustynny Wędrowiec",
+  tool: "👞",
+  desc: "Zwiększa szybkość poruszania się po piasku, czerwonym piasku i podobnych blokach. Premia rośnie z każdym poziomem i działa tylko wtedy, gdy gracz nie jedzie na żadnym pojeździe.",
+  comp: "Depth Strider, Frost Walker"
+},
+{
+  en: "Scent (I-III)",
+  pl: "Węch",
+  tool: "🐺",
+  desc: "Wilk otrzymuje znacznie lepszy zmysł tropienia. W zależności od poziomu uruchamiane są osobne funkcje datapacka odpowiedzialne za wykrywanie i odnajdywanie celów.",
+  comp: "Brak"
+},
+{
+  en: "Scorpion's Soul (I)",
+  pl: "Dusza Skorpiona",
+  tool: "🐺",
+  desc: "Zmienia wilka w jadowitego łowcę. Zwiększa jego rozmiar o 10%, prędkość ruchu o 10%, a każde trafienie nakłada efekt Trucizny.",
+  comp: "Bear's Soul, Crow's Soul, True Nature"
+},
+{
+  en: "Scout (I-V)",
+  pl: "Zwiadowca",
+  tool: "👞",
+  desc: "Zwiększa szybkość poruszania się o 10% na pierwszym poziomie oraz o kolejne 5% za każdy następny poziom. Doskonałe zaklęcie do eksploracji.",
+  comp: "Brak"
+},
+{
+  en: "Scutum (I-III)",
+  pl: "Scutum",
+  tool: "🛡️",
+  desc: "Zaklęta tarcza zapewnia dodatkowy pancerz oraz wytrzymałość pancerza nawet wtedy, gdy jest trzymana w ręce. Na III poziomie daje +5 pancerza oraz +3 Armor Toughness.",
+  comp: "Brak"
+},
+{
+  en: "Seaman (I-III)",
+  pl: "Marynarz",
+  tool: "🔱",
+  desc: "Zwiększa skuteczność poruszania się w wodzie podczas trzymania trójzębu. Każdy poziom dodaje +25% do współczynnika Water Movement Efficiency.",
+  comp: "Brak"
+},
+{
+  en: "Shadow Strike (I-V)",
+  pl: "Cios z Cienia",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Po zmroku zadajesz dodatkowe obrażenia. Bonus działa wyłącznie w Overworldzie między 13 000 a 24 000 ticków (noc) i rośnie o +1 obrażenie na każdy poziom zaklęcia.",
+  comp: "Brak"
+},
+{
+  en: "Sharpness (I-V)",
+  pl: "Ostrość",
+  tool: "⚔️🪓",
+  desc: "Uniwersalne zaklęcie zwiększające obrażenia zadawane większości przeciwników. Nie może występować jednocześnie z Bane of Arthropods, Smite, Butcher, Hero Slayer ani Banditos' Bane.",
+  comp: "Smite, Bane of Arthropods, Butcher, Hero Slayer, Banditos' Bane"
+},
+{
+  en: "Silk Touch (I)",
+  pl: "Jedwabny Dotyk",
+  tool: "⛏️🪓🥄𓌳",
+  desc: "Pozwala wydobywać bloki w ich naturalnej postaci zamiast standardowych łupów. Nie współpracuje z Fortune ani Autosmelter.",
+  comp: "Fortune, Autosmelter"
+},
+{
+  en: "Skydiver (I-III)",
+  pl: "Skoczek Powietrzny",
+  tool: "🦇",
+  desc: "Znacznie zwiększa prędkość lotu podczas używania elytry. Każdy poziom dodaje kolejne 45% bazowej prędkości latania.",
+  comp: "Brak"
+},
+{
+  en: "Sloth's Hand (I)",
+  pl: "Ręka Leniwca",
+  tool: "🥊",
+  desc: "Każdy atak ma 25% szans na spowolnienie przeciwnika. Jeśli cel jest już mocno spowolniony (Slowness III lub wyżej), otrzymuje dodatkowo Oślepienie, Nudności oraz jeszcze silniejsze Spowolnienie.",
+  comp: "Brak"
+},
+{
+  en: "Curse of a Sluggish Draw (I)",
+  pl: "Klątwa Powolnego Naciągu",
+  tool: "🏹",
+  desc: "Znacznie wydłuża czas pełnego naciągnięcia łuku, utrudniając prowadzenie walki na dystans.",
+  comp: "Brak"
+},
+{
+  en: "Smite (I-V)",
+  pl: "Pogromca Nieumarłych",
+  tool: "⚔️🪓",
+  desc: "Zwiększa obrażenia zadawane wszystkim nieumarłym, takim jak zombie, szkielety, utopce, witherowe szkielety czy zombie pigliny.",
+  comp: "Sharpness, Bane of Arthropods, Butcher, Hero Slayer, Banditos' Bane"
+},
+{
+  en: "Smoke (I)",
+  pl: "Zasłona Dymna",
+  tool: "⛑️🧥🦵👞",
+  desc: "Po otrzymaniu obrażeń istnieje 10% szans na aktywowanie specjalnej funkcji Smoke Bomb. Efekt uruchamia niestandardową mechanikę datapacka odpowiedzialną za stworzenie zasłony dymnej.",
+  comp: "Brak"
+},
+{
+  en: "Solar Bloom (I)",
+  pl: "Słoneczny Rozkwit",
+  tool: "⛑️🧥🦵👞",
+  desc: "Aktywuje się wyłącznie za dnia, przy bezchmurnym niebie i pod otwartym niebem. Co kilka sekund przyznaje różne premie zależnie od biomu: Plains - Szybkość, Forest - Odporność, Jungle - Regeneracja, Desert i Badlands - Siła, Flower Forest - Świecenie. Niezależnie od biomu zapewnia również Health Boost.",
+  comp: "Brak"
+},
+{
+  en: "Soul Collector (I)",
+  pl: "Kolekcjoner Dusz",
+  tool: "⚔️",
+  desc: "Po zgromadzeniu co najmniej 60 dusz uruchamia specjalną funkcję datapacka. Mechanika działania opiera się na liczniku 'Souls' i własnych funkcjach datapacka.",
+  comp: "Brak"
+},
+{
+  en: "Soul Speed (I-III)",
+  pl: "Prędkość Dusz",
+  tool: "👞",
+  desc: "Zwiększa szybkość poruszania się po Piasku Dusz i Glebie Dusz. Im wyższy poziom, tym większa premia do prędkości.",
+  comp: "Brak"
+},
+{
+  en: "Spike (I)",
+  pl: "Kolce",
+  tool: "🛡️",
+  desc: "Po zablokowaniu ataku istnieje 25% szans na zranienie napastnika za 2-4 obrażenia. Aktywacja kosztuje 2 punkty wytrzymałości zaklętego przedmiotu.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Spores (I)",
+  pl: "Klątwa Zarodników",
+  tool: "Dowolny przedmiot",
+  desc: "Przeklęty przedmiot stopniowo zatruwa właściciela. Dokładny efekt realizowany jest przez funkcje datapacka i aktywuje się podczas normalnej rozgrywki.",
+  comp: "Brak"
+},
+{
+  en: "Spreadshot (I-III)",
+  pl: "Rozrzut",
+  tool: "🔫",
+  desc: "Zwiększa rozrzut wystrzeliwanych pocisków. Każdy poziom rozszerza kąt rozproszenia o kolejne 3°, dzięki czemu broń obejmuje większy obszar kosztem celności.",
+  comp: "Multishot, Repeater"
+},
+{
+  en: "Stepping (I)",
+  pl: "Pewny Krok",
+  tool: "👞🐎",
+  desc: "Zwiększa wysokość automatycznego wchodzenia na bloki. Gracz może pokonywać przeszkody o 0,4 bloku wyższe bez skakania, a wierzchowce aż o 1,2 bloku.",
+  comp: "Brak"
+},
+{
+  en: "Sun Aegis (I)",
+  pl: "Słoneczna Egida",
+  tool: "⛑️🧥🦵👞",
+  desc: "Za dnia, pod otwartym niebem i przy dobrej pogodzie, co kilka sekund zapewnia efekt Odporności. Zaklęcie przestaje działać po zachodzie słońca lub pod dachem.",
+  comp: "Brak"
+},
+{
+  en: "Sweeping Edge (I-III)",
+  pl: "Szerokie Ostrze",
+  tool: "⚔️",
+  desc: "Zwiększa obrażenia zadawane przeciwnikom trafionym zamachem miecza. Każdy poziom zwiększa współczynnik obrażeń obszarowych.",
+  comp: "Brak"
+},
+{
+  en: "Swift Hands (I-II)",
+  pl: "Zwinne Dłonie",
+  tool: "🪓⚔️🔱",
+  desc: "Podczas walki z siodła zwiększa szybkość ataku o +0,25 na poziom. Efekt działa wyłącznie, gdy gracz dosiada stworzenia wyposażonego w siodło.",
+  comp: "Brak"
+},
+{
+  en: "Swift Sneak (I-III)",
+  pl: "Szybkie Skradanie",
+  tool: "🦵",
+  desc: "Zwiększa prędkość poruszania się podczas skradania o 15% na poziom. Na III poziomie skradanie jest niemal tak szybkie jak zwykły chód.",
+  comp: "Brak"
+},
+{
+  en: "Switcher (I)",
+  pl: "Zamiana",
+  tool: "⚔️🪓🥊🔱",
+  desc: "Po trafieniu uruchamia specjalną funkcję datapacka odpowiedzialną za zamianę pozycji lub zachowania celu. Dokładna mechanika znajduje się w funkcjach `switch/hostile_int` i powiązanych plikach.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Thirst (I)",
+  pl: "Klątwa Pragnienia",
+  tool: "Dowolny przedmiot",
+  desc: "Uruchamia własny system pragnienia datapacka. Co pewien czas sprawdza poziom nawodnienia, a gdy spadnie do zera, zaczyna zadawać obrażenia właścicielowi.",
+  comp: "Brak"
+},
+{
+  en: "Thorns (I-III)",
+  pl: "Ciernie",
+  tool: "🧥",
+  desc: "Po otrzymaniu ciosu istnieje szansa na zranienie napastnika. Zadaje od 1-6 obrażeń (zależnie od poziomu) i zużywa 2 punkty wytrzymałości pancerza przy aktywacji.",
+  comp: "Fire Body, Toxic Body, Ragebound, Masochist"
+},
+{
+  en: "Curse of Lightning Magnet (I)",
+  pl: "Klątwa Piorunochronu",
+  tool: "⛑️🧥🦵👞",
+  desc: "Podczas burzy właściciel znacznie częściej staje się celem wyładowań atmosferycznych.",
+  comp: "Brak"
+},
+{
+  en: "Toxic Body (I-III)",
+  pl: "Toksyczne Ciało",
+  tool: "🧥",
+  desc: "Po otrzymaniu obrażeń istnieje szansa na zatrucie napastnika. Czas działania trucizny oraz jej siła rosną wraz z poziomem zaklęcia. Aktywacja dodatkowo zużywa 2 punkty wytrzymałości pancerza.",
+  comp: "Fire Body, Ragebound, Masochist, Thorns"
+},
+{
+  en: "True Calling (I)",
+  pl: "Prawdziwe Powołanie",
+  tool: "🐺",
+  desc: "Tworzy wszechstronnego wilczego towarzysza. Zwiększa jego rozmiar (+35%), prędkość ruchu (+40%), siłę skoku (+10%) oraz obrażenia (+20%), bez narzucania wyspecjalizowanego stylu walki.",
+  comp: "Bear's Soul, Crow's Soul, Scorpion's Soul"
+},
+{
+  en: "Curse of the Forsaken Surface (I)",
+  pl: "Klątwa Porzuconej Powierzchni",
+  tool: "⛑️🧥🦵👞",
+  desc: "Im wyżej i bliżej powierzchni znajduje się właściciel, tym silniejsze stają się negatywne efekty. Na otwartej przestrzeni powyżej poziomu Y=32 nakłada Oślepienie, a na większych wysokościach dodatkowo pogarsza widoczność.",
+  comp: "Brak"
+},
+{
+  en: "Unbreaking (I-III)",
+  pl: "Niezniszczalność",
+  tool: "Dowolny przedmiot",
+  desc: "Zmniejsza szansę na utratę wytrzymałości. W datapacku wykorzystuje osobne współczynniki dla pancerza i pozostałych przedmiotów, dzięki czemu zachowuje balans między różnymi typami wyposażenia.",
+  comp: "Brak"
+},
+{
+  en: "Unmoveable (I)",
+  pl: "Niewzruszony",
+  tool: "👞",
+  desc: "Podczas skradania zapewnia ogromną odporność na odrzut oraz wyświetla efekt cząsteczek. Świetnie sprawdza się przeciw przeciwnikom opierającym walkę na knockbacku.",
+  comp: "Brak"
+},
+{
+  en: "Curse of Vanishing (I)",
+  pl: "Klątwa Znikania",
+  tool: "Dowolny przedmiot",
+  desc: "Po śmierci właściciela przedmiot znika zamiast wypaść na ziemię.",
+  comp: "Brak"
+},
+{
+  en: "Venomous (I-IV)",
+  pl: "Jadowity",
+  tool: "⚔️🪓",
+  desc: "Każde trafienie nakłada na przeciwnika efekt Trucizny. Czas działania rośnie wraz z poziomem zaklęcia i wynosi od około 2-3 sekund na I poziomie do nawet 4-6 sekund na IV poziomie. Siła efektu losowo wynosi Poison II lub III.",
+  comp: "Fire Aspect, Leech, Grim Reaper, Withering"
+},
+{
+  en: "Curse of Toxic Waters (I)",
+  pl: "Klątwa Toksycznych Wód",
+  tool: "⛑️🧥🦵👞",
+  desc: "Noszenie przeklętego pancerza sprawia, że woda i deszcz stają się niebezpieczne. Podczas pływania otrzymujesz 1-2 pkt. obrażeń magicznych, a ten sam efekt występuje podczas opadów deszczu pod otwartym niebem.",
+  comp: "Brak"
+},
+{
+  en: "Wind Burst (I-III)",
+  pl: "Powiew Wiatru",
+  tool: "🔨",
+  desc: "Po wykonaniu uderzenia buzdyganem z wysokości co najmniej 1,5 bloku wyzwala podmuch przypominający Wind Charge. Eksplozja nie niszczy bloków, ale odrzuca pobliskie jednostki. Siła odrzutu rośnie wraz z poziomem zaklęcia.",
+  comp: "Brak"
+},
+{
+  en: "Wind Walker (I)",
+  pl: "Wędrowiec Wiatru",
+  tool: "🦵",
+  desc: "Zmniejsza odporność na odrzut wywołany eksplozjami. Zaklęcie jest ryzykowne, ponieważ wartość Explosion Knockback Resistance zostaje obniżona o 2 punkty.",
+  comp: "Brak"
+},
+{
+  en: "Withering (I-II)",
+  pl: "Wither",
+  tool: "⚔️🪓",
+  desc: "Każde trafienie nakłada efekt Withera. Czas działania wzrasta wraz z poziomem zaklęcia i wynosi od około 2-3 sekund do około 3-4 sekund. Efekt zawsze ma poziom II.",
+  comp: "Fire Aspect, Leech, Venomous, Grim Reaper"
+},
+{
+  en: "Wrath of Fire (I)",
+  pl: "Gniew Ognia",
+  tool: "⚔️",
+  desc: "Jeżeli właściciel płonie, wszystkie zadawane obrażenia są zwiększane o 25%. Premia działa wyłącznie podczas pozostawania w ogniu.",
+  comp: "Brak"
+}
   
 ];
 
